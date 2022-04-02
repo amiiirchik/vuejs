@@ -1,12 +1,23 @@
 import{ createRouter, createWebHistory } from 'vue-router'
 import Account from '../pages/Account.vue'
+import User from '../pages/User.vue'
 
 const routes = [
     {
         name: 'Account',
-        path: '/',
+        path: '/account',
         alias: '/main',
-        components: Account
+        component: Account
+    },
+    {
+        name: 'User',
+        path: '/user',
+        component: User
+    },
+    {
+        name: 'Reviews',
+        path: '/reviews',
+        component: Reviews
     }
 ]
 
