@@ -1,19 +1,13 @@
-<script>
-export default {
-    name: 'CreateHeader'
-}
+<script setup>
 </script>
 
-<template >
-  <p>Hello world!</p>
+<template lang="pug">
+  router-link(to = "/") Главная
+  router-link(to = "/") Аккаунт
+  router-link(to = "/") Профиль
 </template>
 
 
 <style lang='sass' scoped>
-#app
-  font-family: sans-serif
-  text-align: center
-  color: #2c3e50
-  margin-top: 100px
 
 </style>

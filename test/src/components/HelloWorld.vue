@@ -1,7 +1,6 @@
 <script setup>
 import { ref } from 'vue'
-
-defineProps({
+const props = defineProps({
   msg: String
 })
 let n = 0;
@@ -12,7 +11,9 @@ let arr = [
 </script>
 
 <template>
-  <div v-for="user in arr" :key="user.name">{{user.name}}</div>
+  <div v-for="user in arr" :key="user.name">
+    {{user.name}}
+  </div>
 </template>
 
 <style scoped lang='sass'>

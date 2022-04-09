@@ -1,17 +1,14 @@
-<script>
+<script setup>
   import CreateHeader from './components/CreateHeader.vue'
   import HelloWorld from './components/HelloWorld.vue'
-  export default {
-    name :' App',
-    components: {CreateHeader, HelloWorld}
-  }
+
 </script>
 
-<template>
-  <routerView/><routerView>
+<template lang="pug">
+  router-view
 </template>
 
-<style lang='sass' scoped>
+<style lang='sass'>
 #app
   font-family: sans-serif
   text-align: center

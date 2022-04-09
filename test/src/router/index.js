@@ -1,12 +1,11 @@
-import{ createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router'
 import Account from '../pages/Account.vue'
 
 const routes = [
     {
         name: 'Account',
         path: '/',
-        alias: '/main',
-        components: Account
+        component: Account
     }
 ]
 
