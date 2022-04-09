@@ -1,3 +1,4 @@
-<template lang="pug">
+<template>
+    <p>Привет мир снова</p>
     
 </template>

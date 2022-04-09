@@ -1,23 +1,36 @@
 import{ createRouter, createWebHistory } from 'vue-router'
-import Account from '../pages/Account.vue'
+import Main from '../pages/Main.vue'
 import User from '../pages/User.vue'
+import Reviews from '../pages/Reviews.vue'
 
 const routes = [
     {
-        name: 'Account',
-        path: '/account',
+        name: 'Main',
+        path: '/',
         alias: '/main',
-        component: Account
+        component: Main,
+        meta: {
+            name: 'Главная',
+            icon: 'home'
+        }
     },
     {
         name: 'User',
         path: '/user',
-        component: User
+        component: User,
+        meta: {
+            name: 'Юзер',
+            icon: 'user'
+        }
     },
     {
         name: 'Reviews',
         path: '/reviews',
-        component: Reviews
+        component: Reviews,
+        meta: {
+            name: 'Поиск',
+            icon: 'search'
+        }
     }
 ]
 
