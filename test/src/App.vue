@@ -2,7 +2,7 @@
 <script setup>
 import VHeader from './pages/Header.vue'
 // import { searchButton, startSearch } from 'search'
-
+// import ProfileCardSkeleton from './components/'
 </script>
 
 <template>
@@ -32,46 +32,17 @@ header
 
   a
     margin: 15px 0px
+    transition: .6s
+    text-decoration: none
+    display: block
+    border-right: 1px solid white
+    height: 100%
 
+    &:last-child
+      border: none
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    &:hover
+      letter-spacing: .8px
 
 
 </style>

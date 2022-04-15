@@ -12,6 +12,4 @@
 </template>
 
 <style scoped lang="sass">
-    .par1
-        color: red
 </style>
