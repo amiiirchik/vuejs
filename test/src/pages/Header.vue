@@ -1,12 +1,12 @@
 <template lang="pug">
 header
-      router-link(
-        v-for="link in routes"
-        :key="link.name"
-        :to="link.path"
-      )
-          i.icon(:class="`icon-${link.meta.icon}`")
-          span(v-if="!isMobileScreen") {{ link.meta.name }}
+        router-link(
+          v-for="link in routes"
+          :key="link.name"
+          :to="link.path"
+        )
+            i.icon(:class="`icon-${link.meta.icon}`")
+            span(v-if="!isMobileScreen") {{ link.meta.name }}
 </template>
 
 <script setup>
@@ -18,3 +18,7 @@ header
       .getRoutes()
       .filter((item) => item.aliasOf === undefined)
 </script>
+
+<style lang="sass">
+
+</style>

@@ -1,14 +1,23 @@
 
 <script setup>
 import VHeader from './pages/Header.vue'
+import { Suspense } from 'vue';
 // import { searchButton, startSearch } from 'search'
 // import ProfileCardSkeleton from './components/'
 </script>
 
 <template>
-<v-header></v-header>
+  <Suspense>
+    <template #default>
+      <v-header />
+    </template>
+    <template #fallback>
+      Loading...
+    </template>
+  </Suspense>
 
-<router-view/>
+
+  <router-view/>
 </template>
 
 <style lang='sass'>
